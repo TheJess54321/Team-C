@@ -13,10 +13,6 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/home1/')
-def home1():
-    return render_template('home1.html')
-
 
 if __name__ == '__main__':
     app.run(threaded=True, host='0.0.0.0', port=port)
