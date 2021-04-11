@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 port = int(os.environ.get('PORT', 33507))
 
-@app.route('/')
+@app.route('/home/')
 def home():
     return render_template('home.html')
 
@@ -13,19 +13,19 @@ def home():
 def about():
     return render_template('home.html')
 
-    @app.route('/home1/')
+@app.route('/home1/')
 def home1():
     return render_template('home1.html')
 
-    @app.route('/home2/')
+@app.route('/home2/')
 def home2():
     return render_template('home2.html')
 
-    @app.route('/home3/')
+@app.route('/home3/')
 def home3():
     return render_template('home3.html')
 
-    @app.route('/home4/')
+@app.route('/home4/')
 def home4():
     return render_template('home4.html')
 
