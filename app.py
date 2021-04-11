@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 port = int(os.environ.get('PORT', 33507))
 
-@app.route('/home/')
+@app.route('/')
 def home():
     return render_template('home.html')
 
