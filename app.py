@@ -17,18 +17,6 @@ def about():
 def home1():
     return render_template('home1.html')
 
-@app.route('/home2/')
-def home1():
-    return render_template('home2.html')
-
-@app.route('/home3/')
-def home1():
-    return render_template('home3.html')
-
-@app.route('/home4/')
-def home1():
-    return render_template('home4.html')
-
 
 if __name__ == '__main__':
     app.run(threaded=True, host='0.0.0.0', port=port)
